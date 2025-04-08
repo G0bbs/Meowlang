@@ -3,7 +3,7 @@
 This is a simple trans-compiled language that converts cat language into [brainfuck](https://en.wikipedia.org/wiki/Brainfuck).
 
 Only the lowercase letters m, e, o, and w, are allowed. For any "m" in the program, an "e" must follow. For every "e", an "o". No repeats ("mm" is not accepted).\
-But how can 4 letters map to 8 brainfuck operations?\
+But how can 4 letters map to 8 brainfuck operations?
 
 ## Comments and Operation Rotates
 We have two more characters "!" and "#":
@@ -33,6 +33,13 @@ enum Operation {
     LBRACK = '[',
     RBRACK = ']'
 };
+```
+
+This can be used as reference when writing programs:
+```
+-+<>,.[]
+^^^^
+meow
 ```
 
 ## Hello World
