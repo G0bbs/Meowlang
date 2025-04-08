@@ -37,7 +37,7 @@ enum Operation {
 
 This can be used as reference when writing programs:
 ```
--+<>,.[]
+-+<>,.[]-+<>,.[]
 ^^^^
 meow
 ```
