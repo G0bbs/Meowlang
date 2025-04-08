@@ -157,6 +157,10 @@ bool verifyMeow(char c, CharOperators* ops, bool verbose) {
     if (verbose) {
         printf("\nlast-read: %c, current in: %c.\n", ops->last_read, c);
     }
+    // Allow repeats:
+    // if (ops->last_read == c) {
+    //     return true;
+    // }
     if (ops->last_read == '\0' && c == 'm') {
         ops->last_read = 'm';
         return true;
